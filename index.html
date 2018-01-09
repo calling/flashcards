@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+    <div id="app">
+      <span id="container">
+        <button v-on:click="previous">Previous</button>
+        <span id="card-container">
+          <div id="card" v-on:click="toggleAnswer">
+            <p>Question {{ cardIndex + 1 }}</p>
+            <p id="question"> {{ cards[cardIndex].question }}</p>
+            <p id="answer" v-show="showAnswer">Answer: {{ cards[cardIndex].answer }}</p>
+          </div>
+        </span>
+        <button v-on:click="next">Next</button>
+      </span>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

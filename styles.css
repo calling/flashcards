@@ -1,0 +1,29 @@
+#container {
+  display: flex;
+  justify-content: space-between;
+  align-content: stretch;
+}
+#card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+#card {
+  border: solid;
+}
+
+#question {
+  font-size: 3rem;
+}
+
+p {
+  margin: 0.5rem;
+}
+
+button {
+  display: inline;
+  height: 4rem;
+  width: 4rem;
+}
